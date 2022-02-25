@@ -11,7 +11,8 @@ args = vars(ap.parse_args())
 
 folder_full_path = os.path.abspath(args["folder"])
 fileending = args['endswith']
-print(fileending)
+if fileending != None:
+    print(f"I'm looking for files ending with " + fileending)
 
 total_lines = 0
 
